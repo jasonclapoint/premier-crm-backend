@@ -1,0 +1,125 @@
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Premier Kitchens & Baths — Construction Remodel Theme ─── */
+:root {
+  /* Warm stone / slate — construction + craft */
+  --background: 38 14% 96%;
+  --foreground: 25 18% 14%;
+
+  --card: 36 12% 98%;
+  --card-foreground: 25 18% 14%;
+
+  --popover: 36 12% 98%;
+  --popover-foreground: 25 18% 14%;
+
+  /* Deep teal-green accent — Premier brand */
+  --primary: 183 97% 22%;
+  --primary-foreground: 36 20% 97%;
+
+  --secondary: 36 10% 90%;
+  --secondary-foreground: 25 18% 25%;
+
+  --muted: 36 10% 92%;
+  --muted-foreground: 25 12% 45%;
+
+  --accent: 36 10% 88%;
+  --accent-foreground: 25 18% 14%;
+
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 36 12% 85%;
+  --input: 36 12% 85%;
+  --ring: 183 97% 22%;
+
+  --radius: 0.625rem;
+
+  /* Custom CRM tokens */
+  --color-bg: #f7f5f1;
+  --color-surface: #f9f8f4;
+  --color-surface-2: #fcfbf9;
+  --color-surface-offset: #edebe6;
+  --color-surface-dynamic: #e5e2db;
+  --color-border: #d4d0c8;
+  --color-divider: #dbd8d1;
+  --color-text: #261f15;
+  --color-text-muted: #6b6459;
+  --color-text-faint: #a8a298;
+  --color-text-inverse: #f9f8f4;
+  --color-primary: #016d74;
+  --color-primary-hover: #024f54;
+  --color-primary-highlight: #cddedd;
+  --color-success: #3f7a1c;
+  --color-warning: #9a4012;
+  --color-error: #a03344;
+  --font-body: 'General Sans', system-ui, sans-serif;
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark {
+  --background: 25 18% 9%;
+  --foreground: 36 14% 88%;
+
+  --card: 25 14% 11%;
+  --card-foreground: 36 14% 88%;
+
+  --popover: 25 14% 11%;
+  --popover-foreground: 36 14% 88%;
+
+  --primary: 183 52% 55%;
+  --primary-foreground: 25 18% 10%;
+
+  --secondary: 25 12% 18%;
+  --secondary-foreground: 36 14% 88%;
+
+  --muted: 25 12% 16%;
+  --muted-foreground: 36 10% 55%;
+
+  --accent: 25 12% 18%;
+  --accent-foreground: 36 14% 88%;
+
+  --destructive: 0 62% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 25 12% 20%;
+  --input: 25 12% 20%;
+  --ring: 183 52% 55%;
+
+  --color-bg: #181510;
+  --color-surface: #1e1b16;
+  --color-surface-2: #22201a;
+  --color-surface-offset: #2a2720;
+  --color-surface-dynamic: #302d26;
+  --color-border: #3a3830;
+  --color-divider: #2e2c25;
+  --color-text: #e5e0d6;
+  --color-text-muted: #b4aca0;
+  --color-text-faint: #7a7268;
+  --color-text-inverse: #1a1710;
+  --color-primary: #4fa8b0;
+  --color-primary-hover: #6abfc7;
+  --color-primary-highlight: #1d3537;
+  --color-success: #7db554;
+  --color-warning: #cc7a4a;
+  --color-error: #de6070;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-faint); }
