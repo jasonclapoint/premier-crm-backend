@@ -9,9 +9,8 @@ export const queryClient = new QueryClient({
   },
 });
 
-// __PORT_5000__ is replaced at deploy time with the proxy base URL.
-// In local dev it remains empty string, so /api/... routes work via relative paths.
-const API_BASE = "__PORT_5000__";
+// Always-on backend hosted on Render.com
+const API_BASE = "https://premier-crm-backend.onrender.com";
 
 export async function apiRequest(
   method: string,
