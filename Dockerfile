@@ -14,8 +14,8 @@ COPY . .
 # Build the app
 RUN npm run build
 
-# Expose port
-EXPOSE 5000
+# Expose port (Render sets PORT=10000)
+EXPOSE 10000
 
 # Start production server
 CMD ["node", "dist/index.cjs"]
